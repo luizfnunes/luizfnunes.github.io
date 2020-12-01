@@ -1,1 +1,1 @@
-echo "Testing action"
+print("Testing action")
