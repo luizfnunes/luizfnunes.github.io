@@ -21,5 +21,3 @@ jobs:
       run: |
         cd ./src
         rm -Rf ../docs/*
-        python -m lektor clean --output-path ../docs --yes
-        python -m lektor build --output-path ../docs
