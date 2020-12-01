@@ -1,9 +1,0 @@
-Arquivo de texto com todas as minhas senhas:
-
-123456
-
-654321
-
-112233
-
-000000
