@@ -20,4 +20,4 @@ jobs:
     - name: Deploy
       run: |
         cd src/
-        python -m lektor build --output-path ../docs
+        python -m lektor build --prune --output-path ../docs
