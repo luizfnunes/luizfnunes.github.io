@@ -19,8 +19,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Deploy
       run: |
-        pwd
-        ls
-        cd src/
-        pwd
-        ls
+        cd ./src
+        rm -Rf ../docs/*
+        python -m lektor clean --output-path ../docs --yes
+        python -m lektor build --output-path ../docs
