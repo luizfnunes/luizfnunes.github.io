@@ -17,6 +17,7 @@ jobs:
       - run: |
           pip install --upgrade pip
           if [ -e requirements.txt ]; then pip install -r requirements.txt; fi
+          lektor build --output-path ./site
       - name: Deploy to GitHub Pages
         uses: Cecilapp/GitHub-Pages-deploy@master
         env:
