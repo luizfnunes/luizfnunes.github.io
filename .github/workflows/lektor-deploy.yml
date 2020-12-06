@@ -18,6 +18,7 @@ jobs:
           pip install --upgrade pip
           if [ -e requirements.txt ]; then pip install -r requirements.txt; fi
           lektor build --output-path ./site
+          echo "luizfnunes.zonafantasma.net" > ./site/CNAME
       - name: Deploy to GitHub Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
