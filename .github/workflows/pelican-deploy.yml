@@ -13,9 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - uses: nelsonjchen/gh-pages-pelican-action@0.1.5
-      env:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      with:
-        GH_PAGES_BRANCH: web
+    - name: Lektor Action
+      # You may pin to the exact commit or the version.
+      # uses: VaultVulp/lektor-action@977fc5d066d1d31f259260278fc420c8e86b9d60
+      uses: VaultVulp/lektor-action@v1.0.2
