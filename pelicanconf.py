@@ -7,6 +7,8 @@ SITEURL = ''
 
 PATH = 'content'
 
+STATIC_PATHS = ["CNAME"]
+
 TIMEZONE = 'America/Sao_Paulo'
 
 DEFAULT_LANG = 'pt'
