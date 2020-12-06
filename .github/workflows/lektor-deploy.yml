@@ -18,16 +18,12 @@ jobs:
           pip install --upgrade pip
           if [ -e requirements.txt ]; then pip install -r requirements.txt; fi
           lektor build --output-path ./site
-          echo "secrets\n##########"
-          echo ${{ secrets }}
-          echo "\n###############"
-          echo ${{ secrets.ACCESS_TOKEN }}
-          echo "\n################"
       - name: Deploy to GitHub Pages
-        uses: Cecilapp/GitHub-Pages-deploy@master
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: site
         env:
-          EMAIL: luizfnunes@outlook.com
-          GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BUILD_DIR: site
-          CNAME: luizfnunes.zonafantasma.net
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
