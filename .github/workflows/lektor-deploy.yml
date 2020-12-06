@@ -18,6 +18,11 @@ jobs:
           pip install --upgrade pip
           if [ -e requirements.txt ]; then pip install -r requirements.txt; fi
           lektor build --output-path ./site
+          echo "secrets\n##########"
+          echo ${{ secrets }}
+          echo "\n###############"
+          echo ${{ secrets.ACCESS_TOKEN }}
+          echo "\n################"
       - name: Deploy to GitHub Pages
         uses: Cecilapp/GitHub-Pages-deploy@master
         env:
