@@ -16,13 +16,12 @@ jobs:
           python-version: 3.8
       - run: |
           pip install --upgrade pip
-          pip install requirements.txt
-          lektor build --output-path ./site
-      - name: Deploy to GitHub Pages
-        uses: Cecilapp/GitHub-Pages-deploy@master
-        env:
-          EMAIL: luizfnunes@outlook.com
-          GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BUILD_DIR: site
-          CNAME: luizfnunes.zonafantasma.net
+          ls -l
+      #- name: Deploy to GitHub Pages
+      #  uses: Cecilapp/GitHub-Pages-deploy@master
+      #  env:
+      #    EMAIL: luizfnunes@outlook.com
+      #    GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      #    BUILD_DIR: site
+      #    CNAME: luizfnunes.zonafantasma.net
       
