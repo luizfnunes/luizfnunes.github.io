@@ -13,12 +13,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
     - name: GitHub Pages Pelican Build Action
       # You may pin to the exact commit or the version.
       # uses: nelsonjchen/gh-pages-pelican-action@1c5878bc50b894b2bede964dace03313f3dbd4be
       uses: nelsonjchen/gh-pages-pelican-action@0.1.6  
       with:
         # override the default `gh-pages` deployment branch
-        GH_PAGES_BRANCH: web
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      env:
+        GH_PAGES_BRANCH: web
