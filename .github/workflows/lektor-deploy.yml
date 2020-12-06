@@ -1,0 +1,25 @@
+name: Lektor Deploy
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Setup Python
+        uses: actions/setup-python@v2.1.4
+      - run: |
+          pip install requirements.txt
+          lektor build --output-path ./site
+      - name: Deploy to GitHub Pages
+        uses: Cecilapp/GitHub-Pages-deploy@master
+        env:
+          EMAIL: luizfnunes@outlook.com
+          GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BUILD_DIR: site
+          CNAME: luizfnunes.zonafantasma.net
+      
