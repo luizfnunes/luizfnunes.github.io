@@ -17,11 +17,11 @@ jobs:
       - run: |
           pip install --upgrade pip
           if [ -e requirements.txt ]; then pip install -r requirements.txt; fi
-      #- name: Deploy to GitHub Pages
-      #  uses: Cecilapp/GitHub-Pages-deploy@master
-      #  env:
-      #    EMAIL: luizfnunes@outlook.com
-      #    GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-      #    BUILD_DIR: site
-      #    CNAME: luizfnunes.zonafantasma.net
+      - name: Deploy to GitHub Pages
+        uses: Cecilapp/GitHub-Pages-deploy@master
+        env:
+          EMAIL: luizfnunes@outlook.com
+          GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BUILD_DIR: site
+          CNAME: luizfnunes.zonafantasma.net
       
