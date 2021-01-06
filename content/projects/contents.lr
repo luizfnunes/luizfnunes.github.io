@@ -1,10 +1,6 @@
-_model: page
+_model:
+
+page
 title: Projects
 ---
-body:
-
-This is a list of the projects:
-
-* Project 1
-* Project 2
-* Project 3
+body: <p style="text-align: center;">Em breve postarei meus projetos. Por enquanto, visite meu <a href="http://github.com/luizfnunes">Github</a> ou o meu <a href="http://gitlab.com/luizfnunes">Gitlab</a> :)</p>

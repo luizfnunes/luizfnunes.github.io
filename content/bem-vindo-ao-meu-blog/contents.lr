@@ -1,0 +1,15 @@
+title: Bem vindo ao meu blog
+---
+body:
+
+<p>Seja bem vindo!</p>
+<p>Eu sou o Luiz, mas pode me chamar de Fernando. Esta é possivelmente a única vantagem de quem possui dois nomes. Eu moro no Rio Grande do Sul, então gosto de churrasco, e sou formado em Análise de Sistemas mas não exerço a profissão. Por isso preciso me manter atualizado três vezes mais que um profissional atuante. Esse é um dos motivos de criar este blog, afinal dizem que se você ensinar o que aprendeu assimila melhor o conteúdo.</p>
+<p>Além desse mero blog, possuo um canal no Youtube (<a href="https://www.youtube.com/channel/UC3Kt4kfDuYst-ckpWNM_zbA">Zona Fantasma</a>) onde posto alguns vídeos.</p>
+<p>Espero postar coisas relacionadas a tecnologia, mas não me limitar a isso. Caso queira conversar, os comentários do blog estão a disposição, além do meu Github e email na página sobre</p>
+<p>Então era isso, espero que esta seja a primeira de muitas postagens, feliz 2021</p>
+---
+color: e67e22
+---
+pub_date: 2021-01-06
+---
+snippet: Seja bem vindo. Hoje decidi começar este blog, então esta é uma breve apresentação sobre mim e sobre este singelo blog...

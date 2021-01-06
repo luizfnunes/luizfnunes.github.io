@@ -1,20 +1,21 @@
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="{{ '/static/style.css'|url }}">
-<title>{% block title %}Welcome{% endblock %} — luizfnunes</title>
+<title>luizfnunes - {% block title %}Bem Vindo{% endblock %}</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css" integrity="sha512-RibaM8rs5cOvzf+pDw9BOiH4dy+VTOxxzfwONMkOOd/lFbKWcirhXkWcSd0S6GPwfQRT4OrjT8iAKVC5iIvMRA==" crossorigin="anonymous" />
 <body>
   <header>
-    <h1>luizfnunes</h1>
+    <h1><i class="typcn icon typcn-code-outline"></i> luizfnunes</h1>
     <nav>
       <ul class="nav navbar-nav">
         <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li>
-        {% for href, title in [
-          ['/projects', 'Projects'],
-          ['/about', 'About']
+          %}><a href="{{ '/'|url }}"><i class="typcn icon typcn-home-outline"></i> Bem vindo</a></li>
+        {% for href, title, icon in [
+          ['/projects', 'Projetos', 'typcn-folder' ],
+          ['/about', 'Sobre', 'typcn-warning-outline']
         ] %}
           <li{% if this.is_child_of(href) %} class="active"{% endif
-            %}><a href="{{ href|url }}">{{ title }}</a></li>
+            %}><a href="{{ href|url }}"><i class="typcn icon {{ icon }}"></i> {{ title }}</a></li>
         {% endfor %}
       </ul>
     </nav>
@@ -23,6 +24,7 @@
     {% block body %}{% endblock %}
   </div>
   <footer>
-    &copy; Copyright 2020 by luizfnunes.
+    &copy; Copyleft 2020 by <a href="http://github.com/luizfnunes" target="_blank">luizfnunes</a> e <a href="http://zonafantasma.net" target="_blank">zonafantasma</a>.
+    <br/>Feito com <a href="http://getlektor.com" target="_blank">lektor</a> (We Love <a class="featured" target="_blank" href="http://python.org">Python</a>)!
   </footer>
 </body>
