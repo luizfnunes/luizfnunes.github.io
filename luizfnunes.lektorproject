@@ -1,7 +1,7 @@
 [project]
 name = luizfnunes
 url = http://luizfnunes.zonafantasma.net
-url_style = external
+url_style = relative
 
 [packages]
 lektor-disqus-comments = 0.4.1
