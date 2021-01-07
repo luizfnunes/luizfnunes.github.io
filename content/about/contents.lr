@@ -8,7 +8,7 @@ body:
 <div style="display: flex;  gap: 10px; justify-content: center; align-items: center;">
 <i class="typcn icon typcn-warning-outline" style="font-size: 42px"></i>
 <p>Oi, seja bem vindo. Este é o log do programa chamado Luiz. Ele roda na plataforma chamada vida, que embora tenha alguns problemas, vem funcionando bem.<br/>
-<a href="http://github.com/luizfnunes" target="_blank"><i class="typcn icon typcn-social-github"></i> Github</a> <a href="http://gitlab.com/luizfnunes" target="_blank"><i class="typcn icon typcn-beaker"></i> Gitlab</a> <a href="http://gitlab.com/luizfnunes" target="_blank"><i class="typcn icon typcn-social-youtube"></i> Youtube</a>
+<a href="http://github.com/luizfnunes" target="_blank"><i class="typcn icon typcn-social-github"></i> Github</a> <a href="http://gitlab.com/luizfnunes" target="_blank"><i class="typcn icon typcn-beaker"></i> Gitlab</a> <a href="https://www.youtube.com/channel/UC3Kt4kfDuYst-ckpWNM_zbA" target="_blank"><i class="typcn icon typcn-social-youtube"></i> Youtube</a>
 </p> 
 </div>
 ---
