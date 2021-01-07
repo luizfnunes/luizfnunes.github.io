@@ -77,6 +77,10 @@ header nav ul li {
     margin: 0;
 }
 
+h2.page-title{
+    text-align: center;
+}
+
 .blog-post .meta{
     margin-top: 0;
 }
