@@ -1,0 +1,25 @@
+title: Usando o Highlight.js no blog
+---
+body:
+
+<p>Pensei em futuramente escrever algumas postagens sobre programação, e como todos sabem isso envolve colocar códigos fontes na página.</p>
+<p>Como realizei anteriormente algumas postagens assim, a primeira coisa que pensei foi em destacar os códigos, para isso me lembrei de uma biblioteca em javascript que eu havia utilizado anteriormente, o highlith.js, que detecta e destaca os trechos de código.</p>
+<p>Para usá-lo, bastou linkar os arquivos css e javascript via cdn. Ficou assim:</p>
+<pre><code class="html">&#x3C;link rel=&#x22;stylesheet&#x22;
+      href=&#x22;//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css&#x22;&#x3E;
+&#x3C;script src=&#x22;//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script&#x3E;hljs.initHighlightingOnLoad();&#x3C;/script&#x3E;
+</code></pre>
+<p>Na postagem, para destacar o código basta colocá-lo com a tag code usando a linguagem como classe, desta forma:</p>
+<pre><code class="html">&#x3C;pre&#x3E;&#x3C;code class=&#x22;html&#x22;&#x3E;
+	&#x3C;p&#x3E;C&#xF3;digo html&#x3C;/p&#x3E;
+&#x3C;/code&#x3E;&#x3C;/pre&#x3E;
+</code></pre>
+<p>Fácil, não é? Essa era a postagem de hoje. Para saber mais sobre o highlight.js, basta acessar a página principal do projeto,<a href="https://highlightjs.org" target="_blank"> clicando aqui</a>!</p>
+
+---
+color: f1c40f
+---
+pub_date: 2021-01-08
+---
+snippet: Como atualização no blog, instalei de forma rápida e prática o highlight.js para realçar os códigos...
