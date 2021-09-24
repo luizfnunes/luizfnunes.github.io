@@ -20,7 +20,7 @@ h1.h2,h3,h4,h5{
     color: #B7b7B7;
 }
 
-header, footer, div.page {
+header, footer, div.page, .search {
     width: 760px;
     margin: 0 auto;
     padding: 20px 30px;
@@ -107,7 +107,7 @@ footer{
 
 
 @media screen and (max-width: 760px){
-    header, footer, div.page {
+    header, footer, div.page, .search {
         width: 100%;
         padding: 0;
     }
