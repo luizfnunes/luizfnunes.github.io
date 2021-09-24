@@ -5,5 +5,9 @@ title: Search
 body:
 
 ## Resultado da pesquisa:
+<div id="result">
+<script async src="https://cse.google.com/cse.js?cx=91548cf298b174c04"></script>
+<div class="gcse-searchresults-only"></div>
+</div>
 ---
 title: Search
