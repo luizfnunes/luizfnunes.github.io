@@ -1,0 +1,96 @@
+<!doctype html>
+<meta charset="utf-8">
+<link rel="icon" href="/static/favicon.svg">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Usando o Highlight.js no blog | luizfnunes</title>
+
+<link rel="canonical" href="" />
+<meta name="robots" content="index, follow" />
+<meta name="description" content="Como atualização no blog, instalei de forma rápida e prática o highlight.js para realçar os códigos..." />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Usando o Highlight.js no blog" />
+<meta property="og:description" content="Como atualização no blog, instalei de forma rápida e prática o highlight.js para realçar os códigos..." />
+<meta property="og:image" content="" />
+<meta property="og:url" content="../" />
+<meta property="og:site_name" content="luizfnunes" />
+
+<link rel="stylesheet" href="../static/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css" integrity="sha512-RibaM8rs5cOvzf+pDw9BOiH4dy+VTOxxzfwONMkOOd/lFbKWcirhXkWcSd0S6GPwfQRT4OrjT8iAKVC5iIvMRA==" crossorigin="anonymous" />
+<body>
+  <header>
+    <h1><i class="typcn icon typcn-code-outline"></i> luizfnunes</h1>
+    <nav>
+      <ul class="nav navbar-nav">
+        <li><a href="../"><i class="typcn icon typcn-home-outline"></i> Bem vindo</a></li>
+        
+          <li><a href="../projects/"><i class="typcn icon typcn-folder"></i> Projetos</a></li>
+        
+          <li><a href="../about/"><i class="typcn icon typcn-warning-outline"></i> Sobre</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+  <nav class="search">
+    <script async src="https://cse.google.com/cse.js?cx=91548cf298b174c04"></script>
+    <div class="gcse-searchbox-only" data-resultsUrl="https://luizfnunes.zonafantasma.net/search"></div>
+  </nav>
+  <div class="page">
+    
+  
+  <div class="blog-post">
+  
+  <section>
+    <div class="image" style="background: #f1c40f"></div>
+    <div>
+      <h2>Usando o Highlight.js no blog</h2>
+      <p class="meta">
+        <i class="typcn icon typcn-calendar-outline"></i> postado em 8 de janeiro de 2021
+      </p>
+    </div>
+    </section>
+    <article>
+      <p>Pensei em futuramente escrever algumas postagens sobre programação, e como todos sabem isso envolve colocar códigos fontes na página.</p>
+<p>Como realizei anteriormente algumas postagens assim, a primeira coisa que pensei foi em destacar os códigos, para isso me lembrei de uma biblioteca em javascript que eu havia utilizado anteriormente, o highlith.js, que detecta e destaca os trechos de código.</p>
+<p>Para usá-lo, bastou linkar os arquivos css e javascript via cdn. Ficou assim:</p>
+<pre><code class="html">&#x3C;link rel=&#x22;stylesheet&#x22;
+      href=&#x22;//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css&#x22;&#x3E;
+&#x3C;script src=&#x22;//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;script&#x3E;hljs.initHighlightingOnLoad();&#x3C;/script&#x3E;
+</code></pre>
+<p>Na postagem, para destacar o código basta colocá-lo com a tag code usando a linguagem como classe, desta forma:</p>
+<pre><code class="html">&#x3C;pre&#x3E;&#x3C;code class=&#x22;html&#x22;&#x3E;
+    &#x3C;p&#x3E;C&#xF3;digo html&#x3C;/p&#x3E;
+&#x3C;/code&#x3E;&#x3C;/pre&#x3E;
+</code></pre>
+<p>Fácil, não é? Essa era a postagem de hoje. Para saber mais sobre o highlight.js, basta acessar a página principal do projeto,<a href="https://highlightjs.org" target="_blank"> clicando aqui</a>!</p>
+    </article>
+    <div class="comments">
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function() { this.page.identifier = "/usando-o-highlightjs-no-blog"; this.page.url = "http://luizfnunes.zonafantasma.net/usando-o-highlightjs-no-blog/"; };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = '//luizfnunes-zona-fantasma.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>
+  Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript"
+    rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+</div>
+  
+  
+  </div>
+
+
+  </div>
+  <footer>
+    &copy; Copyleft 2020 by <a href="http://github.com/luizfnunes" target="_blank">luizfnunes</a> e <a href="http://zonafantasma.net" target="_blank">zonafantasma</a>.
+    <br/>Feito com <a href="http://getlektor.com" target="_blank">lektor</a> (We Love <a class="featured" target="_blank" href="http://python.org">Python</a>)!
+  </footer>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</body>
